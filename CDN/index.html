@@ -34,7 +34,9 @@
     </style>
 
     <nav id="nav-tool" class="navbar navbar-inverse navbar-fixed-top">
+        <!-- ini yg disabled, code original nya -->
         <div class="container">
+            
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">Zoom WebSDK</a>
             </div>
@@ -84,7 +86,7 @@
         </div>
     </nav>
 
-    
+    <!--fungsi tombol show/hide -->
     <div id="show-test-tool">
         <button type="submit" class="btn btn-primary" id="show-test-tool-btn" title="show or hide top test tool">Show</button>
     </div>
@@ -92,7 +94,8 @@
         document.getElementById('show-test-tool-btn').addEventListener("click", function(e){
             var textContent = e.target.textContent;
             if (textContent === 'Show') {
-                document.getElementById('nav-tool').style.display = 'block';
+                document.getElementById('nav-tool').style.display = 'block'; //original code, show navbar
+                /* document.getElementById('nav-tool').style.display = 'none'; */ //edit
                 document.getElementById('show-test-tool-btn').textContent = 'Hide';
             }
             else {
